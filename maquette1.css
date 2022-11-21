@@ -1,0 +1,231 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container{/*Ce qui permet de contenir la structure*/
+    position: absolute;
+    width: 100%;
+}
+nav ul{/*Navbar*/
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    position: relative;
+    font-size: 18px;
+}
+nav{/*Position Nav Bar*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    left:75%;
+    bottom:50%;
+    width: 200px;
+    padding-top:4.1%;
+}
+.img{/*logo*/
+    width: 90%;
+}
+.img2{/*lien*/
+width: 20px;
+}
+.h1{/*Name header*/
+    position: relative;
+    display: flex;
+    width: 100px;
+    left:4%;
+    top:50%;
+    font-size: 30px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+header{
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
+body{ /*background*/
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0% 0px;
+    background-attachment: fixed;/*Effet du background*/
+    overflow-x: hidden;
+
+}
+.container_title{/*Conteneur de : NAME, là où vos envies iront*/
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    top:40%;
+    right:30%
+}
+#fond{/*Fond semi transparent*/
+    background-color: rgba(255, 255, 255, 0.527);
+    height:1000px;
+    width:50%;
+    position:absolute;
+    top:100px;
+    right:0%
+}
+.h1_2{/*"NAME" de : Name,là où vos envies iront*/
+    font-size:80px
+}
+.h2_2{/*"Là où vos envies iront" de : Name,là où vos envies iront*/
+    font-size:25px;
+    text-decoration: solid;
+    text-decoration: underline;
+}
+.fond_blanc{ /*Fond blanc de A propos de Name*/
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100%;
+    height:450px;
+    top: 700%;
+    z-index: 1;
+}
+article{/*A propos de Name*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:790%;
+    z-index: 2;
+    right:20%;
+}
+.h1_3{/* même chose que : article h1*/
+    font-size:45px
+}
+article h2{
+    font-size:25px
+}
+article p{
+    font-size:20px;
+    height: 20px;
+}
+.random{/*Image du random sur internet*/
+    position:absolute;
+    top:900%;
+    width:100%;
+}
+.fond_blanc2{ /*deuxieme fond blanc : Services proposés par Name*/
+    width: 100%;
+    height:300px;
+    position:absolute;
+    top:1470%;
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+}
+.container_title_2{/*Conteneur de : Services proposés par Name*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    top:30%
+}
+.img3{/*Image de droite*/
+    width: 55%;
+    position:absolute;
+    top: 1670%;
+    right: 0%;
+    z-index: 1;
+}
+.img4{/*Image de gauche*/
+    position:absolute;
+    top: 1670%;
+    width: 55% ;
+    z-index: 1;
+}
+.container_title_3{/*Conteneur des deux titre d'image, fond gris semi transparent*/
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height:470px;
+    position: absolute;
+    top: 1670%;
+    z-index: 2;
+}
+.h1_4{
+    color:white;
+    font-size: 22px;
+    line-height: 2em;
+
+}
+
+.p_4{
+    color:white;
+    font-size: 18px;
+    line-height: 6em;
+}
+.img_title_4{/*Conteneur Image gauche*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    top:45%;
+    left:5%
+}
+.img_title_5{
+    position: absolute;
+    top:0%;
+    left:50%
+}
+.container_contact{
+    width: 100%;
+}
+#contact{/*Boutton Contact*/
+    border:1px solid black;
+    width: 300px;
+    border-radius: 50px;
+    height:30px;
+    position:relative;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: inline;
+    padding: 10px;
+    border-color: white;
+    text-decoration: none;
+}
+#contact:hover{
+    background-color: white;
+    color:black;
+    text-decoration-style: none;
+    animation-name: lienhover;
+    animation-duration: 0.7s;
+}
+a:-webkit-any-link{ /*underline delete lien*/
+    text-decoration: none;
+}
+@keyframes lienhover {
+    from{background-color: transparent;color: white}
+    to{background-color: white;color:black;}
+}
+.fond_blanc3{
+    width: 100%;
+    height:90%;
+    background-color: rgb(221, 221, 221);
+    position: relative;
+    top: 62%;
+}
+.container_title_6{ /*conteneur de : Horaires*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding-top: 5%;
+}
+.h1_5{
+    line-height: 50px;
+    font-size: 25px;
+}
+.h2_5{
+    line-height: 140px;
+    font-size: 18px;
+}
+.p_5{
+    line-height: 25px;
+}
